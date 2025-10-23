@@ -1,0 +1,668 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+@font-face {
+    font-family: font;
+    src: url(./Chillax-Regular.woff);
+}
+
+html {
+    font-size: clamp(14px, 1vw, 18px);
+}
+body{
+        background-color: rgb(21, 21, 21);
+}
+
+@mixin flex() {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    width: 100%;
+    @include flex();
+    align-items: center;
+    
+    section.view0{
+        color: white;
+        max-width: 2000px;
+        width: 100%;
+        padding: 1.5rem;
+        .name{
+            width: 100%;
+            h1{
+                text-align: start;
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    section.view1{
+        width: 100%;
+        padding: 1rem;
+        @include flex();
+        gap: 0.7rem;
+        max-width: 2000px;
+       
+        .top {
+            width: 100%;
+            img {
+                width: 100%;
+                border-radius: 0.7rem;
+
+            }
+        }
+
+        .bottom {
+            color: white;
+            background-color: rgb(40, 40, 40);
+            border-radius: 0.7rem;
+            @include flex();
+            gap: 4rem;
+            padding: 2rem 2rem;
+
+            .topleft p {
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
+
+            .heading h1{
+                text-transform: uppercase;
+                font-size: 3rem;
+                font-weight: 300;
+                line-height: 1.1;
+            }
+
+            .paragraph p {
+                font-size: 1.4rem;
+                opacity: 0.5;
+                line-height: 1.6;
+            }
+            .center{
+                @include flex();
+                gap: 1.5rem;
+                line-height: 1.5;
+            }
+            .button button {
+                background-color: transparent;
+                color: white;
+                border: none;
+                text-transform: uppercase;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+            .button i {
+                font-size: 1rem;
+                font-weight: 100;
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+
+    section.view2 {
+        color: white;
+        @include flex();
+        gap: 3rem;
+        padding: 1rem;
+        max-width: 2000px;
+
+        .top, .bottom {
+            display: flex;
+            gap: 5rem;
+            justify-content: space-around;
+
+            .element {
+                line-height: 1.5;
+                small {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                opacity: 0.5;
+                font-weight: 100;
+            }
+            h1{
+                font-size: 2.5rem;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+        } 
+    }
+
+     section.view3{
+        width: 100%;
+        padding: 1rem;
+        @include flex();
+        gap: 0.7rem;
+        max-width: 2000px;
+       
+        .top {
+            width: 100%;
+            img {
+                width: 100%;
+                border-radius: 0.7rem;
+
+            }
+        }
+
+        .bottom {
+            color: white;
+            background-color: rgb(40, 40, 40);
+            border-radius: 0.7rem;
+            @include flex();
+            gap: 4rem;
+            padding: 2rem 2rem;
+
+            .topleft p {
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
+
+            .heading h1{
+                text-transform: uppercase;
+                font-size: 2.4rem;
+                font-weight: 300;
+                line-height: 1.1;
+            }
+
+            .paragraph p {
+                font-size: 1.2rem;
+                opacity: 0.5;
+                display: inline;
+            }
+            .center{
+                @include flex();
+                gap: 1.5rem;
+                line-height: 1.5;
+            }
+            .button button {
+                background-color: transparent;
+                color: white;
+                border: none;
+                text-transform: uppercase;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+            .button i {
+                font-size: 1rem;
+                font-weight: 100;
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+     section.view4{
+        width: 100%;
+        padding: 1rem;
+        @include flex();
+        gap: 0.7rem;
+        max-width: 2000px;
+       
+        .top {
+            width: 100%;
+            img {
+                width: 100%;
+                border-radius: 0.7rem;
+
+            }
+        }
+
+        .bottom {
+            color: white;
+            background-color: rgb(40, 40, 40);
+            border-radius: 0.7rem;
+            @include flex();
+            gap: 4rem;
+            padding: 2rem 2rem;
+
+            .topleft p {
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
+
+            .heading h1{
+                text-transform: uppercase;
+                font-size: 2.4rem;
+                font-weight: 300;
+                line-height: 1.1;
+            }
+
+            .paragraph p {
+                font-size: 1.2rem;
+                opacity: 0.5;
+                display: inline
+            }
+            .center{
+                @include flex();
+                gap: 1.5rem;
+                line-height: 1.5;
+            }
+            .button button {
+                background-color: transparent;
+                color: white;
+                border: none;
+                text-transform: uppercase;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+            .button i {
+                font-size: 1rem;
+                font-weight: 100;
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+    section.view5{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 11rem ;
+        padding: 1rem;
+        max-width: 2000px;
+        .team{
+            h1{
+                color: white;
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: 200;
+            }
+             }
+        .job{
+            button{
+                color: transparent;
+                background-color: transparent;
+                border: none;
+            }
+        }
+
+       
+        }
+     section.view6{
+        width: 100%;
+        padding:1rem;
+        color: white;
+        @include flex();
+        max-width: 2000px;
+        .card1{
+            width: 100%;
+            background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01.webp);
+            background-size: cover;
+            aspect-ratio: 1/1;
+            @include flex();
+            justify-content: space-between;
+            padding: 2rem;
+            border-radius: 0.7rem;
+            margin-bottom: 1rem;
+           
+            .icon, .bottom{
+                display: flex;
+                background-color: rgba(104, 104, 104, 0.324);
+                backdrop-filter: blur(10px);
+                padding: 1rem;
+                border-radius: 0.5rem;
+                display: inline;
+            }
+            .icons{
+                display: flex;
+                justify-content: flex-end;
+                gap: 0.5rem;
+
+               .icon {
+                 padding: 1rem;
+                border-radius: 50%;
+                
+                i{
+                    font-size: 1rem;
+                }
+                
+               }
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                h1{
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                    
+                }
+                h2{
+                    padding: 0.4rem;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    font-weight: 100;
+                }
+            }
+        }
+         .card2{
+            width: 100%;
+            background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02.webp);
+            background-size: cover;
+            aspect-ratio: 1/1;
+            @include flex();
+            justify-content: space-between;
+            padding: 2rem;
+            border-radius: 0.7rem;
+             margin-bottom: 1rem;
+           
+            .icon, .bottom{
+                display: flex;
+                background-color: rgba(104, 104, 104, 0.324);
+                backdrop-filter: blur(10px);
+                padding: 1rem;
+                border-radius: 0.5rem;
+                display: inline;
+            }
+            .icons{
+                display: flex;
+                justify-content: flex-end;
+                gap: 0.5rem;
+
+               .icon {
+                 padding: 1rem;
+                border-radius: 50%;
+                
+                i{
+                    font-size: 1rem;
+                }
+                
+               }
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                h1{
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                    
+                }
+                h2{
+                    padding: 0.4rem;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    font-weight: 100;
+                }
+            }
+        }
+         .card3{
+            width: 100%;
+            background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03.webp);
+            background-size: cover;
+            aspect-ratio: 1/1;
+            @include flex();
+            justify-content: space-between;
+            padding: 2rem;
+            border-radius: 0.7rem;
+             margin-bottom: 1rem;
+           
+            .icon, .bottom{
+                display: flex;
+                background-color: rgba(104, 104, 104, 0.324);
+                backdrop-filter: blur(10px);
+                padding: 1rem;
+                border-radius: 0.5rem;
+                display: inline;
+            }
+            .icons{
+                display: flex;
+                justify-content: flex-end;
+                gap: 0.5rem;
+
+               .icon {
+                 padding: 1rem;
+                border-radius: 50%;
+                
+                i{
+                    font-size: 1rem;
+                }
+                
+               }
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                h1{
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                    
+                }
+                h2{
+                    padding: 0.4rem;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+    section.view7{
+        max-width: 2000px;
+        width: 95%;
+        padding: 2rem 1.5rem;
+        color: black;
+        background-color: #CEBD63;
+        border-radius: 0.7rem;
+        @include flex();
+        gap: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+
+
+        .top{
+            p{
+                text-transform: uppercase;
+                color: black;
+            }
+        }
+        .suzi{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+        
+        .heading{
+            h1{
+                text-transform: uppercase;
+                font-size: 3rem;
+                font-weight: 300;
+                line-height: 1;
+            }
+        }
+        .button{
+
+            button{
+                background-color: black;
+                color: white;
+                 padding: 1rem 8rem;
+                text-transform: uppercase;
+                border-radius: 0.7rem;
+                font-size: 1rem;
+                
+            }
+            i{
+                color: white;
+            }
+
+        }
+        }
+    }
+    }
+   
+
+@media (min-width:900px) {
+   main {
+    section.view1 {
+        flex-direction: row;
+
+        .top, .bottom {
+            width: 50%;
+
+        }
+
+        .bottom {
+            justify-content: space-between;
+            padding: 3rem 3.5rem;  
+            gap: 7rem;
+
+            .center {
+                gap: 1rem;
+
+                 .heading h1 {
+                   font-size: 3.5rem;
+              }
+                 .paragraph p{
+                    width: 90%;
+                 }
+        
+            }
+
+            
+        }
+       
+    }
+
+    section.view2{
+        flex-direction: row;
+        padding: 3rem;
+        justify-content: space-between;
+        gap: 10rem;
+       .top, .bottom{
+        gap: 10rem;
+        .element {
+            h1{
+            font-size: 4rem;
+        }
+    }
+       }
+    }
+
+    section.view3{
+        flex-direction: row-reverse;
+
+        .top, .bottom {
+            width: 50%;
+        }
+
+        .bottom {
+            justify-content: space-between;
+            padding: 2rem 3.5rem;  
+            gap: 10rem;
+
+            .center {
+                gap: 2rem;
+
+                 .heading h1 {
+                   font-size: 3rem;
+              }
+                 .paragraph {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 0.1rem;
+                    gap: 2rem;
+
+                 p{
+                    width: 80%;
+                    font-size: 1.2rem;
+                 }
+                }
+        
+            }
+
+            
+        }
+       
+    }
+      section.view4{
+        flex-direction: row-reverse;
+
+        .top, .bottom {
+            width: 50%;
+        }
+
+        .bottom {
+            justify-content: space-between;
+            padding: 2rem 3.5rem;  
+            gap: 10rem;
+
+            .center {
+                gap: 2rem;
+
+                 .heading h1 {
+                   font-size: 3rem;
+              }
+                 .paragraph {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 0.1rem;
+                    gap: 2rem;
+
+                 p{
+                    width: 80%;
+                    font-size: 1.2rem;
+                 }
+                }
+        
+            }
+
+            
+        }
+       
+    }
+
+    section.view5{
+
+       .team{
+        h1{
+            font-size: 2.5rem;
+        }
+       }
+        gap: 67rem;
+        .job {
+            button{
+                color:white;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+    section.view6{
+        flex-direction: row;
+        gap: 1rem;
+    }
+    section.view7{
+        padding: 4rem;
+        width: 98%;
+
+        .suzi{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            h1{
+               font-size: 5rem;
+               width: 70%;
+
+            }
+            .button{
+                button{
+                    padding: 0.5rem 5rem;
+                }
+            }
+
+        }
+    }
+
+
+
+   }
+}
